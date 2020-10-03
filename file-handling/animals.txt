@@ -1,0 +1,16 @@
+dog
+cow
+dog
+hen
+fish
+ram
+ram
+cow
+fish
+donkey
+goat
+dinosaur
+goat
+donkey
+donkey
+
