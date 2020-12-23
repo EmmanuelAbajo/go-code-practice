@@ -21,12 +21,14 @@ func main() {
 	start := time.Now()
 
 	arr1 := [5]int{1, 2, 3, 4, 5}  // Go array
+	arr2 := [...]string{1: "January", 2: "February", 3: "March"} // Array with indices
 	slice1 := make([]int, 10)      // Go slice
 	slice2 := []int{1, 2, 3, 4, 5} // Go slice
 	slice3 := arr1[1:3]            // Slice from array
 	slice4 := slice1[0:5]          // Go reslicing
 
 	fmt.Println(arr1)
+	fmt.Println(arr2[2])
 	fmt.Println(slice3)
 	slice2 = append(slice2, 6)
 	fmt.Println(slice2)
