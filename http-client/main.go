@@ -14,11 +14,12 @@ func main(){
 		fmt.Println(err.Error())
 		os.Exit(0)
 	}
+	
+	defer response.Body.Close()
 	fmt.Println("Response code:",response.Status)
 
 	// returns a byte array
 	data,err := ioutil.ReadAll(response.Body)
-	response.Body.Close()
 	if err != nil {
 		fmt.Println(err.Error())
 		os.Exit(0)
