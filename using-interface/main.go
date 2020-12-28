@@ -41,4 +41,13 @@ func main() {
 	}
 
 	fmt.Printf("Total Area: %v\n", total)
+
+	// This represents a map of a string to any object as value
+	data := map[string]interface{} {
+		"name": "Joe",
+		"age": 20,
+		"isEligible": true,
+	}
+
+	fmt.Println(data)
 }
