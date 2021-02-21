@@ -44,9 +44,4 @@ func main() {
 	duration := time.Since(start)
 	fmt.Println("Execution time:", duration)
 
-	var x map[string]bool;
-	x = make(map[string]bool)
-	// x["Emma"] = 20
-	fmt.Println(x["Emma"])
-
 }
