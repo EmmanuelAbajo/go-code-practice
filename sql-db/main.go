@@ -3,10 +3,10 @@ package main
 import (
 	"database/sql"
 	"fmt"
-
 	_ "github.com/go-sql-driver/mysql"
 )
 
+// User struct 
 type User struct {
 	ID        int    `json:"id"`
 	FirstName string `json:"firstname"`

@@ -31,6 +31,10 @@ func (r *Rectangle) Area() float64 {
 	return r.length * r.breadth
 }
 
+func testFnc(value interface{}) {
+	fmt.Println(value)
+}
+
 func main() {
 	var shapes []Shape
 	shapes = []Shape{ &Circle{10}, &Rectangle{4,5} }
@@ -49,5 +53,5 @@ func main() {
 		"isEligible": true,
 	}
 
-	fmt.Println(data)
+	testFnc(data)
 }

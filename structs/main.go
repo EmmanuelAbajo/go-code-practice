@@ -65,16 +65,16 @@ type Employee struct {
 	createdAt time.Time
 }
 
-func (emp Employee) setName(firstName, lastName string) {
+func (emp *Employee) setName(firstName, lastName string) {
 	emp.firstName = firstName
 	emp.lastName = lastName
 }
 
-func (emp Employee) getIDByFirstName(firstName string) int {
+func (emp *Employee) getIDByFirstName(firstName string) int {
 	return emp.id
 }
 
-func (emp Employee) toString() {
+func (emp *Employee) toString() {
 	fmt.Printf("id=%d firstname=%s lastname=%s createdAt=%s\n", emp.id, emp.firstName, emp.lastName, emp.createdAt)
 }
 
